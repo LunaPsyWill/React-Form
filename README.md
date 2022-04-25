@@ -1,4 +1,4 @@
-#*English:
+# English:
 To Run the app, in CMD please go to the route of the form in your device and type:
 
 ### 'npm start'
@@ -10,7 +10,7 @@ And also, in another CMD go to formulario/src/db route and type:
 this will run the API for the proper operation of the form
 if necessary, reload the page of the form.
 
-#*Español:
+# Español:
 Para correr la app, en una consola de CMD diríjase a la ruta del formulario dentro de su dispositivo y escriba:
 
 ### 'npm start'
