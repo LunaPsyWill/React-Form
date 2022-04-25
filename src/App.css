@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +18,409 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+body {
+  /* background-image: url('./img/background2_1000.jpeg'); */
+  /* background-repeat: repeat; */
+  background-color: #0B1029;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif
+}
+
+.titulo {
+  margin: 20px auto;
+  padding-bottom: 10px; 
+  background: #C3D5D6;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.titulo h1 {
+  background: #3EC94F;
+  padding: 10px;
+  margin-top: -10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.titulo p {
+  margin-bottom: 10px;
+}
+
+.img {
+  width: 50%;
+  background:#C3D5D6;
+  margin: 20px auto;
+}
+
+.img img {
+  width: 90%;
+  height: auto;
+  padding: 40px 10px;
+}
+
+.frmReg {
+  background: #C3D5D6;
+  width: 50%;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.frmReg p {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  text-align:justify;
+}
+
+.frmReg p span {
+  font-weight: bold;
+  margin: 0;
+}
+
+.frmReg .aclaracion {
+  margin-top: -50px;
+  margin-bottom: -10px;
+  font-size: 1.1em;
+}
+
+.obliga {
+  color: #F51111;
+}
+
+.contemail {
+  display: flex;
+  flex-direction: row; 
+  padding: 10px;
+}
+
+.email {
+  border: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  text-align:justify;
+  box-shadow: 0 1px 3px #000;
+  background: #686F6730;
+}
+
+.inpText, .inpNum {
+  border: none;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin: 20px;
+  height: 30px;
+  width: 40%;
+  box-shadow: 0 1px 3px #000;
+  background: #686F6730;
+}
+
+.inpDate {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin: 10px;
+  height: 2em;
+  width: 40%;
+  background: #686F6730;
+}
+
+.textarea {
+  width: 60%;
+  height: 8em;
+  margin: 20px;
+  font-size: 1.1em;
+  background: #686F6730;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+label {
+  text-align: left;
+  margin-left: 40px;
+  margin-top: -10px; 
+}
+
+.par {
+  margin-bottom: 0;
+}
+
+.select {
+  margin: 20px;
+  margin-top: 0;
+  width: 30%;
+  height: 2em;
+  font-size: 1em;
+  background: #686F6730;
+}
+
+.btn {
+  margin: 40px;
+  margin-top: -10px;
+  width: 10%;
+  height: 2.1em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #0ABF0B;
+  background: #fff;
+  border: none;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.btn:active {
+  transform: translateY(4px)
+}
+
+.btncont {
+  margin: 40px;
+  margin-top: -10px;
+  width: 25%;
+  height: 2.1em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #1DA92B;
+  background: #fff;
+  border: none;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.enviar {
+  color: #fff;
+  background: #1DA92B;
+}
+
+.seccion {
+  background: #3EC94F;
+  padding: 10px;
+  /* margin-top: -10px; */
+  border-radius: 10px 10px 0 0;
+}
+
+.seccion p {
+  margin-top: 5px;
+  margin-bottom: -5px;
+  text-align: left;
+  font-size: 2em;
+}
+
+.separador {
+  background: #92A1F5;
+  height: 1.5em;
+}
+
+/*-------MEDIA QUERIES---------*/
+
+@media only screen and (max-width: 768px) {
+  .titulo h1 {
+    font-size: 1.2em;
+  }
+
+  .titulo p {
+    font-size: 0.8em;
+  }
+
+  .img img {
+    padding: 20px 10px;
+  }
+
+  .frmReg {
+    margin: 10px auto;
+    padding-bottom: 10px;
+  }
+
+  .frmReg .par {
+    font-size: 1em;
+    margin-bottom: 3px;
+  }
+
+  .frmReg .obliga {
+    /* margin: 5px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
+
+  .frmReg .aclaracion {
+    margin-top: -30px;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+  }
+
+  .select {
+    margin: 5px;
+    margin-bottom: 10px;
+    width: 45%;
+    height: 1.8em;
+    font-size: 1em;
+  }
+
+  .email {
+    margin-bottom: 20px;
+    font-size: 1em;
+    width: 60%;
+  }
+
+  .inpText, .inpNum {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    width: 50%;
+    height: 2em;
+    margin: 10px; 
+  }
+
+  .inpDate {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    margin: 10px;
+    height: 2em;
+    width: 50%;
+  }
+  
+  .textarea {
+    width: 80%;
+    height: 7em;
+    margin: 15px;
+    font-size: 1em;
+  }
+
+  .btn {
+    width: 20%;
+    margin: 10px;
+    font-size: 1em;
+  }
+
+  .btncont {
+    width: 35%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 0.8em;
+  }
+
+  .seccion {
+    padding: 5px;
+  }
+
+  .seccion p {
+    text-align: left;
+    font-size: 0.9em;
+  }
+
+  .separador {
+    height: 1em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .titulo h1 {
+    font-size: 1em;
+  }
+
+  .titulo p {
+    font-size: 0.7em;
+  }
+
+  .img img {
+    padding: 20px 10px;
+  }
+
+  .frmReg {
+    margin: 10px auto;
+    padding-bottom: 5px;
+  }
+
+  .frmReg .par {
+    font-size: 0.7em;
+    margin-bottom: 3px;
+  }
+
+  .frmReg .obliga {
+    /* margin: 5px; */
+    margin-top: -5px;
+    margin-bottom: -5px;
+    font-size: 0.7em;
+  }
+
+  .frmReg .aclaracion {
+    margin-top: -30px;
+    margin-bottom: 5px;
+    font-size: 0.6em;
+  }
+
+  .select {
+    margin: 0;
+    margin-bottom: 5px;
+    width: 50%;
+    height: 1.5em;
+    font-size: 0.8em;
+  }
+
+  .email {
+    margin-bottom: 20px;
+    font-size: 0.8em;
+    width: 50%;
+    height: 1em;
+  }
+
+  .inpText, .inpNum {
+    font-size: 0.6em;
+    padding: 5px 10px;
+    width: 50%;
+    height: 2em;
+    margin: 10px; 
+  }
+
+  .inpDate {
+    font-size: 0.6em;
+    padding: 5px 10px;
+    margin: 10px;
+    height: 2em;
+    width: 50%;
+  }
+  
+  .textarea {
+    width: 70%;
+    height: 5em;
+    margin: 20px;
+    font-size: 0.8em;
+  }
+
+  .btn {
+    width: 20%;
+    margin: 10px;
+    margin-top: -10px;
+    font-size: 0.7em;
+  }
+
+  .btncont {
+    width: 40%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    font-size: 0.6em;
+  }
+
+  .seccion {
+    padding: 5px;
+  }
+
+  .seccion p {
+    text-align: left;
+    font-size: 0.9em;
+  }
+
+  .separador {
+    height: 1em;
   }
 }
